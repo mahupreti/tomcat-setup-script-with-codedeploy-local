@@ -28,7 +28,6 @@ fi
 # Print a message indicating the successful creation of the group and user
 echo "group and user got created successfully"
 
-###created the viveka home directory (for what? i also have to ask)
 #if [ -d "${PROJECT_HOME}" ];
 #then
 #  rm -rf ${PROJECT_HOME}
