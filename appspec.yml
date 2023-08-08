@@ -8,7 +8,6 @@ hooks:
     - location: scripts1/before-install.sh
       timeout: 300
   AfterInstall:
-    - location: validator-test/run-ansible.sh
     - location: scripts1/after-install.sh
       timeout: 300
   ApplicationStart:
