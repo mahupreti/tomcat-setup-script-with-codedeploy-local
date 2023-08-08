@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+hooks:
+  ApplicationStop:
+    - location: scripts1/application-stop.sh
+      timeout: 300
+  BeforeInstall:
+    - location: scripts1/before-install.sh
+      timeout: 300
+  AfterInstall:
+    - location: validator-test/run-ansible.sh
+    - location: scripts1/after-install.sh
+      timeout: 300
+  ApplicationStart:
+    - location: scripts1/application-start.sh
+      timeout: 300
