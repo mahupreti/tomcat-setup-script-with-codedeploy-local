@@ -79,7 +79,7 @@ else
     ## description: Tomcat startup/ shutdown script
     # process name: tomcat
 
-    cp -f tomcat-service-file /etc/systemd/system/tomcat.service
+    cp -f ../tomcat-service-file /etc/systemd/system/tomcat.service
     echo "copied service file"
 
     chmod 755 /etc/systemd/system/tomcat.service
