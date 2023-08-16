@@ -3,9 +3,9 @@
 
 set -e
 
-CATALINA_DIR="/home/mahesh" #my tomcat catalina directory
+CATALINA_DIR="/home/ec2-user" #my tomcat catalina directory
 TOMCAT_VERSION_NUMBER=9.0.78
-PROJECT_HOME="/home/mahesh/Desktop/projects/tomcat-codedeploy-test/validator-test/conf"
+#PROJECT_HOME="/home/ec2-user/Desktop/projects/tomcat-codedeploy-test/validator-test/conf"
 
 echo "Tomcat group and user are going to be created."
 TOMCAT_GROUP="tomcat"
@@ -25,21 +25,21 @@ fi
 echo "group and user got created successfully"
 
 #make PROJECT_HOME directory
-if [ -d "${PROJECT_HOME}" ];
-then
-  rm -rf ${PROJECT_HOME}
-  echo "removed PROJECT_HOME"
-  mkdir ${PROJECT_HOME}
-  echo "created PROJECT_HOME"
-else
-  mkdir ${PROJECT_HOME}
-fi
+#if [ -d "${PROJECT_HOME}" ];
+#then
+#  rm -rf ${PROJECT_HOME}
+#  echo "removed PROJECT_HOME"
+#  mkdir ${PROJECT_HOME}
+#  echo "created PROJECT_HOME"
+#else
+#  mkdir ${PROJECT_HOME}
+#fi
 
 #
 #######changed the owner group
-chmod 755 -R ${PROJECT_HOME}
-chown tomcat:tomcat -R ${PROJECT_HOME}
-echo "made the owner tomcat and changed the mode to 755"
+#chmod 755 -R ${PROJECT_HOME}
+#chown tomcat:tomcat -R ${PROJECT_HOME}
+#echo "made the owner tomcat and changed the mode to 755"
 
 
 ##check if tomcat is already installed or not
