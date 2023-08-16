@@ -47,7 +47,6 @@ if [[ -d "${CATALINA_DIR}/apache-tomcat-${TOMCAT_VERSION_NUMBER}" ]];
 then
     echo "Tomcat is installed at ${CATALINA_DIR}/apache-tomcat-${TOMCAT_VERSION_NUMBER}"
     echo "no need to download"
-    exit 0
 else
     echo "Tomcat is not installed at ${CATALINA_DIR}/apache-tomcat-${TOMCAT_VERSION_NUMBER}"
 
