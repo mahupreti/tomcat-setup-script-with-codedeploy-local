@@ -3,7 +3,7 @@
 set -e
 
 DEPLOY_TO_ROOT='true'
-WAR_STAGED_LOCATION="/home/ec2-user/tomcat-setup-script-with-codedeploy-local/demo-0.0.1-SNAPSHOT.war"
+WAR_STAGED_LOCATION="../demo-0.0.1-SNAPSHOT.war"
 
 CATALINA_DIR="/home/ec2-user"
 TOMCAT_VERSION_NUMBER=9.0.78
